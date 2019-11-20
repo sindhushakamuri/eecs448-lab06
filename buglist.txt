@@ -6,3 +6,6 @@ It also caused dequeue to not work properly. It would would remove from the back
 Destructor: When I ran Valgrind, there were memory leaks.
 It didn't properly deallocate all of the values.
 There were 18 allocs, 10 frees. This was due to the bug in enqueue.
+
+Dequeue Documentation: Not a bug but in the return method it says that it returns the value of the entry at the front of the queue.
+But dequeue doesn't return anything since it's a void function.
